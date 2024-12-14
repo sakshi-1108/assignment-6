@@ -19,11 +19,11 @@ int main() {
             printf("Invalid move! Try again.\n");
             i--;
             continue;
-        }
+        } 
 
         board[row-1][col-1] = currentPlayer;
 
-        // Check for a win
+        // Check for the win
         if ((board[0][0] == currentPlayer && board[0][1] == currentPlayer && board[0][2] == currentPlayer) ||
             (board[1][0] == currentPlayer && board[1][1] == currentPlayer && board[1][2] == currentPlayer) ||
             (board[2][0] == currentPlayer && board[2][1] == currentPlayer && board[2][2] == currentPlayer) ||
